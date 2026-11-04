@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Developer Dashboard — G SAI MANOJ GOUD</title>
+<meta name="description" content="Interactive developer dashboard for G Sai Manoj Goud with profile information, technical skills, coding platform links and project shortcuts.">
+<meta name="author" content="G SAI MANOJ GOUD">
+<meta name="theme-color" content="#05070f">
+<meta property="og:title" content="Developer Dashboard — G SAI MANOJ GOUD">
+<meta property="og:description" content="Interactive developer dashboard for G Sai Manoj Goud with profile information, technical skills, coding platform links and project shortcuts.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script type="module" src="assets/js/site.js"></script>
+<script type="module" src="assets/js/dashboard.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="ambient" aria-hidden="true"><span></span></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<header data-header></header>
+<main id="main">
+<section class="page-top"><div class="container">
+<span class="eyebrow reveal">Developer dashboard</span>
+<h1 class="title-lg reveal" style="--d:.05s">Everything at a <span class="grad-text">glance</span>.</h1>
+<p class="lead reveal" style="--d:.1s">An interactive overview of profile, skills, coding platforms and projects.</p></div></section>
+<section class="section" style="padding-top:2rem"><div class="container dash">
+<div class="card span-5 reveal"><div style="display:flex;gap:1rem;align-items:center;margin-bottom:1.2rem">
+<img src="assets/img/profile.webp" alt="" width="64" height="64" style="width:64px;height:64px;border-radius:16px;object-fit:cover;object-position:top" loading="lazy">
+<div><h2 class="title-md" style="margin:0">G SAI MANOJ GOUD</h2><p style="margin:0;font-size:.9rem">Aspiring SDE · CSE Undergraduate</p></div></div>
+<div class="grid grid-2" style="gap:.8rem">
+<div><div class="stat grad-text">8.988</div><small style="color:var(--text-mute)">CGPA (till 4th sem)</small></div>
+<div><div class="stat">B.Tech</div><small style="color:var(--text-mute)">CSE · SR University</small></div></div>
+<div class="contact-item"><i data-lucide="mail"></i><a href="mailto:saimanojmbhs@gmail.com">saimanojmbhs@gmail.com</a></div>
+<div class="contact-item"><i data-lucide="phone"></i><a href="tel:+919618387772">+91 9618387772</a></div></div>
+<div class="span-7 reveal" style="--d:.08s"><div class="terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>~/sai-manoj — profile</span></div>
+<div style="padding:1rem 1.3rem 0" class="tabs" role="tablist" aria-label="Profile views">
+<button class="tab" role="tab" aria-selected="true" data-view="profile">profile</button><button class="tab" role="tab" aria-selected="false" data-view="skills">skills</button><button class="tab" role="tab" aria-selected="false" data-view="learning">learning</button><button class="tab" role="tab" aria-selected="false" data-view="education">education</button></div>
+<pre id="term" aria-live="polite"></pre></div></div>
+<div class="card span-6 reveal"><h2 class="title-md">Coding platforms</h2><div class="grid" style="gap:.7rem" id="platforms"></div></div>
+<div class="card span-6 reveal" style="--d:.08s"><h2 class="title-md">Project shortcuts</h2><div class="grid" style="gap:.7rem">
+<a class="platform" href="projects.html#overview"><i data-lucide="hard-hat"></i><div><strong>Intelli-Helmet</strong><small>Smart safety system for two-wheelers</small></div><i data-lucide="arrow-up-right" class="go"></i></a>
+<a class="platform" href="projects.html#features"><i data-lucide="list-checks"></i><div><strong>Features</strong><small>Helmet, alcohol, drowsiness, alert</small></div><i data-lucide="arrow-up-right" class="go"></i></a>
+<a class="platform" href="projects.html#functionality"><i data-lucide="workflow"></i><div><strong>System functionality</strong><small>Safety logic flow</small></div><i data-lucide="arrow-up-right" class="go"></i></a>
+<a class="platform" href="assets/docs/G_SAI_MANOJ_GOUD_Resume.pdf" download="G_SAI_MANOJ_GOUD_Resume.pdf"><i data-lucide="file-down"></i><div><strong>Resume</strong><small>G_SAI_MANOJ_GOUD_Resume.pdf</small></div><i data-lucide="download" class="go"></i></a>
+</div></div>
+</div></section>
+</main>
+<footer data-footer></footer>
+</body>
+</html>

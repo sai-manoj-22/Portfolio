@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intelli-Helmet Project — G SAI MANOJ GOUD</title>
+<meta name="description" content="Intelli-Helmet: a smart safety system for two-wheelers with helmet-wearing, alcohol and drowsiness detection, built by G Sai Manoj Goud.">
+<meta name="author" content="G SAI MANOJ GOUD">
+<meta name="theme-color" content="#05070f">
+<meta property="og:title" content="Intelli-Helmet Project — G SAI MANOJ GOUD">
+<meta property="og:description" content="Intelli-Helmet: a smart safety system for two-wheelers with helmet-wearing, alcohol and drowsiness detection, built by G Sai Manoj Goud.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script type="module" src="assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="ambient" aria-hidden="true"><span></span></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<header data-header></header>
+<main id="main">
+
+<section class="page-top"><div class="container">
+<span class="eyebrow reveal">Project case study</span>
+<div class="card project-hero reveal">
+<div class="body"><h1 class="title-lg">Intelli-Helmet</h1><p class="title-md" style="color:var(--text-dim);font-weight:500">Smart Safety System for Two-Wheelers</p>
+<p class="lead">Designed and developed a smart helmet by integrating sensors to enhance rider safety.</p>
+<div class="tags"><span class="tag">Embedded sensors</span><span class="tag">Real-time safety logic</span><span class="tag">Road safety</span></div></div>
+<div class="project-visual"><svg class="helmet-svg" viewBox="0 0 300 260" fill="none" aria-hidden="true">
+<defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82ff"/><stop offset=".6" stop-color="#22d3ee"/><stop offset="1" stop-color="#8b7bff"/></linearGradient>
+<clipPath id="visor"><path d="M70 120c10-40 60-58 110-48 30 6 50 26 52 48H70z"/></clipPath></defs>
+<path d="M40 170c-6-70 40-130 120-130s124 56 118 120c-1 14-12 24-26 24H66c-14 0-25-6-26-14z" stroke="url(#hg)" stroke-width="3" fill="rgba(59,130,255,.06)"/>
+<path d="M70 120c10-40 60-58 110-48 30 6 50 26 52 48" stroke="url(#hg)" stroke-width="2.5"/>
+<path d="M70 120h162" stroke="url(#hg)" stroke-width="2"/>
+<g clip-path="url(#visor)"><rect class="scan" x="60" y="70" width="190" height="4" fill="#22d3ee" opacity=".8"/></g>
+<path d="M60 184h200" stroke="#22d3ee" stroke-opacity=".4" stroke-dasharray="4 6"/>
+<g><circle cx="110" cy="152" r="6" fill="#22d3ee"/><circle class="sensor-pulse" cx="110" cy="152" r="6" stroke="#22d3ee"/></g>
+<g><circle cx="160" cy="58" r="6" fill="#8b7bff"/><circle class="sensor-pulse" cx="160" cy="58" r="6" stroke="#8b7bff" style="animation-delay:.8s"/></g>
+<g><circle cx="215" cy="152" r="6" fill="#3b82ff"/><circle class="sensor-pulse" cx="215" cy="152" r="6" stroke="#3b82ff" style="animation-delay:1.6s"/></g>
+<path d="M110 152 L60 225 M160 58 L160 18 M215 152 L262 225" stroke="#6b7799" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="20" y="240" fill="#9aa6c7" font-size="11" font-family="Space Grotesk">HELMET</text>
+<text x="132" y="12" fill="#9aa6c7" font-size="11" font-family="Space Grotesk">EYE / FATIGUE</text>
+<text x="232" y="240" fill="#9aa6c7" font-size="11" font-family="Space Grotesk">ALCOHOL</text>
+</svg></div></div></div></section>
+<section class="section" style="padding-top:1rem"><div class="container">
+<nav class="subnav reveal" aria-label="Project sections"><a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#objectives">Objectives</a><a href="#features">Features</a><a href="#functionality">Functionality</a><a href="#implementation">Implementation</a><a href="#outcome">Outcome</a></nav>
+<div class="grid grid-2">
+<article id="overview" class="card proj-block reveal"><div class="icon-chip"><i data-lucide="scan-eye"></i></div><h2 class="title-md">Project overview</h2><p>Intelli-Helmet is a smart helmet that brings sensor-based safety checks to two-wheeler riding. It verifies that the rider is wearing the helmet, checks for alcohol, and watches for signs of drowsiness — alerting the rider when needed.</p></article>
+<article id="problem" class="card proj-block reveal" style="--d:.08s"><div class="icon-chip"><i data-lucide="triangle-alert"></i></div><h2 class="title-md">Problem statement</h2><p>Riding without a helmet, riding under the influence of alcohol and rider fatigue are risk factors in two-wheeler road accidents. A conventional helmet cannot detect or prevent any of these conditions.</p></article>
+</div>
+<article id="objectives" class="card proj-block reveal"><div class="icon-chip"><i data-lucide="target"></i></div><h2 class="title-md">Objectives</h2>
+<ul class="list-check"><li><i data-lucide="check"></i>Ensure the vehicle starts only when the helmet is worn.</li><li><i data-lucide="check"></i>Prevent the bike from starting if alcohol is detected.</li><li><i data-lucide="check"></i>Identify signs of rider fatigue by tracking eye movement.</li><li><i data-lucide="check"></i>Alert the rider with a beep to keep them awake.</li></ul></article>
+<div id="features" class="proj-block"><h2 class="title-md reveal" style="margin:2.4rem 0 1.2rem">Features</h2><div class="grid grid-4"><div class="card reveal" style="--d:0.0s" data-tilt><div class="icon-chip"><i data-lucide="hard-hat"></i></div><h3>Helmet-wearing detection</h3><p style="margin:0">The vehicle starts only when the helmet is worn.</p></div><div class="card reveal" style="--d:0.06s" data-tilt><div class="icon-chip"><i data-lucide="wine-off"></i></div><h3>Alcohol detection</h3><p style="margin:0">Prevents the bike from starting if alcohol is detected.</p></div><div class="card reveal" style="--d:0.12s" data-tilt><div class="icon-chip"><i data-lucide="eye"></i></div><h3>Drowsiness detection</h3><p style="margin:0">Tracks eye movement to identify signs of fatigue.</p></div><div class="card reveal" style="--d:0.18s" data-tilt><div class="icon-chip"><i data-lucide="bell-ring"></i></div><h3>Alert mechanism</h3><p style="margin:0">Triggers an alert beep to keep the rider awake.</p></div></div></div>
+<article id="functionality" class="card proj-block reveal" style="margin-top:1.4rem"><div class="icon-chip"><i data-lucide="workflow"></i></div><h2 class="title-md">System functionality</h2>
+<p>The safety logic runs as a sequence of checks before and during the ride:</p>
+<div class="logic-diagram" style="margin:1.2rem 0 1.6rem"><span class="node">Helmet worn?</span><span class="arrow">→</span><span class="node">Alcohol detected?</span><span class="arrow">→</span><span class="node ok">Vehicle can start</span><span class="arrow">→</span><span class="node">Monitor eye movement</span><span class="arrow">→</span><span class="node stop">Fatigue → alert beep</span></div>
+<ol class="flow"><li><div><h4>Helmet check</h4><p>If the helmet is not worn, the vehicle does not start.</p></div></li><li><div><h4>Alcohol check</h4><p>If alcohol is detected, the bike is prevented from starting.</p></div></li><li><div><h4>Drowsiness monitoring</h4><p>While riding, eye movement is tracked to identify signs of fatigue.</p></div></li><li><div><h4>Alert</h4><p>When fatigue is detected, an alert beep is triggered to keep the rider awake.</p></div></li></ol></article>
+<div class="grid grid-2" style="margin-top:1.4rem">
+<article id="implementation" class="card proj-block reveal"><div class="icon-chip"><i data-lucide="cpu"></i></div><h2 class="title-md">Implementation details</h2><p>The project combines embedded sensor integration with real-time safety logic. Sensors integrated into the helmet provide helmet-wearing, alcohol and eye-movement inputs, and the safety logic uses these inputs to control vehicle start-up and trigger the alert mechanism.</p></article>
+<article id="outcome" class="card proj-block reveal" style="--d:.08s"><div class="icon-chip"><i data-lucide="shield-check"></i></div><h2 class="title-md">Project outcome</h2><p>A working smart helmet that combines four safety mechanisms — helmet-wearing detection, alcohol detection, drowsiness detection and an alert mechanism — aimed at reducing road accident risks for two-wheeler riders.</p></article>
+</div></div></section><section class="section"><div class="container"><div class="card cta-band reveal">
+<span class="eyebrow">Open to opportunities</span>
+<h2 class="title-lg">Let's build something <span class="grad-text">great</span>.</h2>
+<p class="lead" style="margin:0 auto 2rem">Seeking Software Development Engineer internships and placement opportunities.</p>
+<div class="btn-row"><a class="btn btn-primary" href="contact.html"><i data-lucide="send"></i>Get in touch</a><a class="btn" href="assets/docs/G_SAI_MANOJ_GOUD_Resume.pdf" download="G_SAI_MANOJ_GOUD_Resume.pdf"><i data-lucide="download"></i>Download Resume</a></div></div></div></section>
+</main>
+<footer data-footer></footer>
+</body>
+</html>
