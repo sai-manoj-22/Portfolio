@@ -74,27 +74,64 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      { rel: "icon", href: "/portfolio/assets/img/favicon.svg", type: "image/svg+xml" },
-    ],
-  }),
+head: () => ({
+  meta: [
+    { charSet: "utf-8" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+
+    {
+      title: "G SAI MANOJ GOUD | Software Engineer Portfolio",
+    },
+    {
+      name: "description",
+      content:
+        "Portfolio of G Sai Manoj Goud, Computer Science undergraduate at SR University and aspiring Software Development Engineer. Explore my skills, projects, and experience.",
+    },
+
+    { property: "og:title", content: "G SAI MANOJ GOUD | Portfolio" },
+    {
+      property: "og:description",
+      content:
+        "Computer Science undergraduate and aspiring Software Development Engineer. Explore my projects, technical skills, and experience.",
+    },
+    { property: "og:type", content: "website" },
+    {
+      property: "og:url",
+      content: "https://portfolio-sai-manoj-22.vercel.app/",
+    },
+    {
+      property: "og:image",
+      content: "https://portfolio-sai-manoj-22.vercel.app/thumbnail.png",
+    },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+
+    { name: "twitter:card", content: "summary_large_image" },
+    {
+      name: "twitter:title",
+      content: "G SAI MANOJ GOUD | Portfolio",
+    },
+    {
+      name: "twitter:description",
+      content: "Explore my software engineering portfolio and projects.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://portfolio-sai-manoj-22.vercel.app/thumbnail.png",
+    },
+  ],
+  links: [
+    {
+      rel: "stylesheet",
+      href: appCss,
+    },
+    {
+      rel: "icon",
+      href: "/portfolio/assets/img/favicon.svg",
+      type: "image/svg+xml",
+    },
+  ],
+}),
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
