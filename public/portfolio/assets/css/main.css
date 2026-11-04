@@ -180,17 +180,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .portrait { position: relative; aspect-ratio: 4 / 5; max-width: 470px; margin-left: auto; width: 100%; }
 
 .portrait-glow {
-  position: absolute;
-  inset: 0% -12% -5%;
-  border-radius: 50%;
-  background: radial-gradient(
-    closest-side,
-    rgba(59, 130, 255, 0.85),
-    rgba(34, 211, 238, 0.35) 55%,
-    transparent 80%
-  );
-  filter: blur(45px);
-  animation: breathe 7s ease-in-out infinite;
+  position: absolute; inset: 8% -6% 0; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(59,130,255,.55), rgba(34,211,238,.18) 55%, transparent 75%);
+  filter: blur(30px); animation: breathe 7s ease-in-out infinite;
 }
 
 @keyframes breathe { 50% { transform: scale(1.06); opacity: .8; } }
